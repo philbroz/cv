@@ -3,7 +3,7 @@ module.exports = {
   title: 'Software Engineer',
   facts: {
     'Residence': '<a href="https://maps.app.goo.gl/G5r4RDBKUVEB5yHE9"><i class="fa fa-home fact-icon"></i>Meolo</a>',
-    'Email': '<a href="mailto:filippo.frater@gmail.com"><i class="fa fa-envelope fact-icon"></i>mailto:filippo.frater@gmail.com</a>'
+    'Email': '<a href="mailto:filippo.frater@gmail.com"><i class="fa fa-envelope fact-icon"></i>filippo.frater@gmail.com</a>'
   },
   positions: [
     {
@@ -15,11 +15,16 @@ Prince Hamlet is visited by his father's ghost and ordered to avenge his father'
 `
     },
     {
-      title: 'Twelfth Night',
-      period: '1600 – 1601',
-      skills: ['comedy', 'love'],
+      title: 'Software Development Specialist',
+      period: 'apr 2021 - apr 2024 · 3 anni 1 mese',
+      skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps'],
       contents: `
-Viola finds herself shipwrecked in Illyria and, assuming that her brother Sebastian has died in the wreck, disguises herself as a man to gain a position in Duke Orsino's court. Orsino sends Viola (whom he knows as Cesario) to deliver a message to his love, Olivia. Olivia, however, dislikes the Duke. She falls in love with Viola, who she thinks is a man. Eventually, Viola's brother Sebastian, who in fact was unharmed in the wreck, reappears. At a critical moment, Viola's true identity is revealed when members of the court notice the similarities between her and Sebastian. Olivia quickly falls in love with Sebastian, and Viola confesses her love for the Duke.
+Ero nel team di sviluppo <a href="https://www.custom.biz/it_IT/prodotto/software/onestore?_gl=1*1h5jeqd*_up*MQ..*_ga*MTcyNTM0NDA5OC4xNzE4MzgzNjE3*_ga_5QB51RJSHZ*MTcxODM4MzYxNi4xLjAuMTcxODM4MzYzMi4wLjAuMA..*_ga_N07PHW80WY*MTcxODM4MzYxNi4xLjEuMTcxODM4MzYzMi4wLjAuMA..">OneStore</a>
+Mi occupavo principalmente di backend in .NET Core, ma anche frontend con AngularJS, Angular e React Native
+
+Altre tecnologie utilizzate.
+Database SQL Server, Azure SQL Server, MySQLite
+Azure DevOps
 `
     },
     {
