@@ -10,14 +10,14 @@ module.exports = {
       title: 'Software Development Specialist',
       company: 'Custom S.p.A',
       period: 'since april 2024',
-      skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'Git', 'CI/CD', 'Git'],
+      skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
 As in Bizeta, I have been part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
 I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Native.
 
-Other technologies used:\n\t- SQL Server, Azure SQL Server, MySQLite, Azure DevOps
+Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
       
-For version control and branch workflow:\n\t- Git on Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'Software Development Specialist',
@@ -28,9 +28,9 @@ For version control and branch workflow:\n\t- Git on Azure DevOps, GitKraken (Gi
 I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
 I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
 
-Other technologies used:\n\t- SQL Server, Azure SQL Server, MySQLite, Azure DevOps
+Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
       
-For version control and branch workflow:\n\t- Git on Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'The Tragedy of Romeo and Juliet',
