@@ -16,16 +16,19 @@ Prince Hamlet is visited by his father's ghost and ordered to avenge his father'
     },
     {
       title: 'Software Development Specialist',
-      period: 'apr 2021 - apr 2024 · 3 anni 1 mese',
+      period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps'],
       contents: `
-Ero nel team di sviluppo <a href="https://www.custom.biz/it_IT/prodotto/software/onestore">OneStore</a>
-Mi occupavo principalmente di backend in .NET Core, ma anche frontend con AngularJS, Angular e React Native
+I was part of the development team for '<a href="https://www.custom.biz/it_IT/prodotto/software/onestore">OneStore</a>'.
+I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
 
-Altre tecnologie utilizzate.
-Database SQL Server, Azure SQL Server, MySQLite
+Other technologies used:
+
+SQL Server, Azure SQL Server, MySQLite databases
 Azure DevOps
-`
+For version control and branch workflow:
+
+Git on Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'The Tragedy of Romeo and Juliet',
