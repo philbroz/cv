@@ -19,7 +19,7 @@ Prince Hamlet is visited by his father's ghost and ordered to avenge his father'
       period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps'],
       contents: `
-I was part of the development team for '<a href="https://www.custom.biz/it_IT/prodotto/software/onestore">OneStore</a>'.
+I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore).
 I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
 
 Other technologies used:
