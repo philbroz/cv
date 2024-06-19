@@ -7,15 +7,17 @@ module.exports = {
   },
   positions: [
     {
-      title: 'Hamlet',
-      period: 'Likely early 17th century',
-      skills: ['tragedy', 'philosophy', 'death'],
+      title: 'Software Development Specialist',
+      company: 'Custom S.p.A',
+      period: 'since april 2024',
+      skills: [],
       contents: `
-Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether it is right for him to take revenge, Hamlet, along with almost all the other major characters, is killed.
-`
+As in Bizeta, I have been part of the development team for OneStore, which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Native.`
     },
     {
       title: 'Software Development Specialist',
+      company: 'Bizeta Retail Solutions srl | a Custom company',
       period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps'],
       contents: `
@@ -23,12 +25,10 @@ I was part of the development team for [OneStore](https://www.custom.biz/it_IT/p
 I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
 
 Other technologies used:
-
-SQL Server, Azure SQL Server, MySQLite databases
-Azure DevOps
+ - SQL Server, Azure SQL Server, MySQLite, Azure DevOps
+      
 For version control and branch workflow:
-
-Git on Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+ - Git on Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'The Tragedy of Romeo and Juliet',
