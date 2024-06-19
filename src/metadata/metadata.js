@@ -12,7 +12,7 @@ module.exports = {
       period: 'since april 2024',
       skills: [],
       contents: `
-As in Bizeta, I have been part of the development team for OneStore, which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+As in Bizeta, I have been part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
 I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Native.`
     },
     {
@@ -21,7 +21,7 @@ I mainly work on the backend using .NET Core, but also handle frontend developme
       period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps'],
       contents: `
-I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore).
+I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
 I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
 
 Other technologies used:
