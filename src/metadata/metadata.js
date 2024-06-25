@@ -23,21 +23,11 @@ For version control and branch workflow: Git with Azure DevOps, GitKraken (Git G
       period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
-        I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
-        I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
-
-        Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
-
-        For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Nati
+Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure Dev
+For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
-    {
-      title: 'The Tragedy of Romeo and Juliet',
-      period: '1595–1596, with a possible early draft written in 1591',
-      skills: ['tragedy', 'death', 'love'],
-      contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
-`
-    }
   ],
   educations: [
     {
@@ -45,7 +35,11 @@ In Verona, Italy, two families, the Montagues and the Capulets, are in the midst
       period: 'september 2009 - november 2013 · 4 years',
       skills: ['statistics', 'computer sciences', 'business management'],
       contents: `
-In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
+My academic journey focused on three main areas: statistics, economics, and computer science.
+I delved into statistics, starting from its fundamentals and progressing to statistical inference. In the field of economics, I completed courses in macroeconomics, microeconomics, business economics, and business management. As for computer science, I acquired skills in programming, database management, and web development.
+
+Particularly engaging were the courses in survey sampling, statistical models (including the study of neural networks), business economics, methodological statistics (with a focus on cluster analysis), and philosophy of science.
+These subjects significantly enriched my education, providing me with a broad and interdisciplinary perspective
 `
     }
   ],
