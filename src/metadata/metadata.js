@@ -9,6 +9,8 @@ module.exports = {
     {
       title: 'Software Development Specialist',
       company: 'Custom S.p.A',
+      location: 'Mira, Italy',
+      mode: 'Hybrid',  // or 'Remote', 'Hybrid'
       period: 'since april 2024',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
@@ -20,6 +22,8 @@ For version control and branch workflow: Git with Azure DevOps, GitKraken (Git G
     {
       title: 'Software Development Specialist',
       company: 'Bizeta Retail Solutions srl | a Custom company',
+      location: 'Mestre and Mira, Italy',
+      mode: 'Hybrid',  // or 'Remote', 'Hybrid'
       period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
@@ -31,7 +35,10 @@ For version control and branch workflow: Git with Azure DevOps, GitKraken (Git G
   ],
   educations: [
     {
-      title: 'Statistics and Computer Sciences for Business Management (L-41 - Statistics)',
+      title: 'Bachelor\'s degree in Statistics and Computer Sciences for Business Management (L-41 - Statistics)',
+      institution: 'Università Ca’ Foscari Venezia',
+      location: 'Treviso, Italy',
+      mode: 'In-person',  // or 'Remote', 'Hybrid'
       period: 'september 2009 - november 2013 · 4 years',
       skills: ['statistics', 'computer sciences', 'business management'],
       contents: `
@@ -44,6 +51,17 @@ These subjects significantly enriched my education, providing me with a broad an
 My studies culminated in a thesis titled 'Lifestyles and Social Inequalities in Veneto: Analysis of PASSI Data' ('Gli stili di vita e le disuguaglianze sociali in Veneto. Analisi di dati PASSI').
 This research focused on analyzing health data and social inequalities in the Veneto region using the PASSI surveillance program. The thesis, written in Italian, explored the interconnections between lifestyle factors and social disparities, demonstrating the practical application of statistical analysis to real-world public health issues. Key aspects of the study included data analysis, system evaluation, and health assessment within the context of the Veneto region.
 This work is available for consultation through Open Access, reflecting my commitment to transparency and knowledge sharing in academic research.
+`
+    },
+    {
+      title: 'High School Diploma in Computer Science (Computer Expert, Abacus Project)',
+      institution: 'ITIS V.Volterra',
+      location: 'San Donà di Piave (Venice), Italy',
+      mode: 'In-person',  // or 'Remote', 'Hybrid'
+      period: 'september 2004 - july 2009 · 4 years',
+      skills: ['statistics', 'computer sciences', 'mathematics', 'electronics'],
+      contents: `
+Specialized subjects studied: mathematics, computer science, statistics, electronics.
 `
     }
   ],
