@@ -12,12 +12,10 @@ module.exports = {
       period: 'since april 2024',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
-  	    As in Bizeta, I have been part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
-  	    I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Native.
-
-  	    Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
-
-  	    For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+As in Bizeta, I have been part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Nati
+Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure Dev
+For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'Software Development Specialist',
