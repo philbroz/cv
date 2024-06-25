@@ -39,7 +39,11 @@ My academic journey focused on three main areas: statistics, economics, and comp
 I delved into statistics, starting from its fundamentals and progressing to statistical inference. In the field of economics, I completed courses in macroeconomics, microeconomics, business economics, and business management. As for computer science, I acquired skills in programming, database management, and web development.
 
 Particularly engaging were the courses in survey sampling, statistical models (including the study of neural networks), business economics, methodological statistics (with a focus on cluster analysis), and philosophy of science.
-These subjects significantly enriched my education, providing me with a broad and interdisciplinary perspective
+These subjects significantly enriched my education, providing me with a broad and interdisciplinary perspective.
+
+My studies culminated in a thesis titled 'Lifestyles and Social Inequalities in Veneto: Analysis of PASSI Data' ('Gli stili di vita e le disuguaglianze sociali in Veneto. Analisi di dati PASSI').
+This research focused on analyzing health data and social inequalities in the Veneto region using the PASSI surveillance program. The thesis, written in Italian, explored the interconnections between lifestyle factors and social disparities, demonstrating the practical application of statistical analysis to real-world public health issues. Key aspects of the study included data analysis, system evaluation, and health assessment within the context of the Veneto region.
+This work is available for consultation through Open Access, reflecting my commitment to transparency and knowledge sharing in academic research.
 `
     }
   ],
