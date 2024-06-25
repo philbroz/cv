@@ -12,12 +12,12 @@ module.exports = {
       period: 'since april 2024',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
-As in Bizeta, I have been part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
-I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Native.
+  	    As in Bizeta, I have been part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+  	    I mainly work on the backend using .NET Core, but also handle frontend development with AngularJS, Angular, and React Native.
 
-Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
-      
-For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+  	    Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
+
+  	    For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'Software Development Specialist',
@@ -25,17 +25,27 @@ For version control and branch workflow: Git with Azure DevOps, GitKraken (Git G
       period: 'april 2021 - april 2024 · 3 years',
       skills: ['.NET Core', 'AzureSQL', 'SQLServer', 'MySQLite', 'Angular', 'AngularJS', 'ReactNative', 'Azure DevOps', 'CI/CD', 'Git'],
       contents: `
-I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
-I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
+        I was part of the development team for [OneStore](https://www.custom.biz/it_IT/prodotto/software/onestore), which is part of the Software Business Unit of Custom S.p.a. OneStore is a point of sale solution for the retail fashion and luxury sector.
+        I mainly worked on the backend using .NET Core, but also handled frontend development with AngularJS, Angular, and React Native.
 
-Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
-      
-For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
+        Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure DevOps
+
+        For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
     {
       title: 'The Tragedy of Romeo and Juliet',
       period: '1595–1596, with a possible early draft written in 1591',
       skills: ['tragedy', 'death', 'love'],
+      contents: `
+In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
+`
+    }
+  ],
+  educations: [
+    {
+      title: 'Statistics and Computer Sciences for Business Management (L-41 - Statistics)',
+      period: 'september 2009 - november 2013 · 4 years',
+      skills: ['statistics', 'computer sciences', 'business management'],
       contents: `
 In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial hatred. After Romeo kills Juliet's cousin Tybalt in a fit of passion, things fall apart. Both lovers eventually commit suicide within minutes of each other, and the feuding families make peace over their recent grief.
 `
