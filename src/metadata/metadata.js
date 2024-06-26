@@ -9,7 +9,15 @@ module.exports = {
     email: {
         icon: '<i class="fa fa-envelope fact-icon"></i>',
         value: '<a href="mailto:filippo.frater@gmail.com">filippo.frater@gmail.com</a>'
-    }
+    },
+    github: {
+        icon: '<i class="fa-brands fa-github fact-icon"></i>',
+        value: '<a href="https://github.com/philbroz">philbroz</a>'
+    },
+    linkedin: {
+        icon: '<i class="fa-brands fa-linkedin fact-icon"></i>',
+        value: '<a href="https://www.linkedin.com/in/filippofrater/">filippofrater</a>'
+    },
   },
   positions: [
     {
