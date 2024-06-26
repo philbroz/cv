@@ -41,8 +41,8 @@
                 <ul class="list-group list-group-flush">
                     {{#each facts}}
                     <li class="list-group-item d-flex justify-content-between align-items-start">
-                        <span class="text-nowrap">{{{ @key }}}</span>
-                        <span class="text-nowrap">{{{ this }}}</span>
+                        <span class="text-nowrap">{{{ this.icon }}}</span>
+                        <span class="text-nowrap">{{{ this.value }}}</span>
                     </li>
                     {{/each}}
                 </ul>

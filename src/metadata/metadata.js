@@ -2,8 +2,14 @@ module.exports = {
   name: 'Filippo Frater',
   title: 'Software Engineer',
   facts: {
-    '<i class="fa fa-home fact-icon"></i>': '<a href="https://maps.app.goo.gl/qhev2K3mbxbPA5qx8">Meolo</a>',
-    'Email': '<a href="mailto:filippo.frater@gmail.com"><i class="fa fa-envelope fact-icon"></i>filippo.frater@gmail.com</a>'
+    home: {
+        icon: '<i class="fa fa-home fact-icon"></i>',
+        value: '<a href="https://maps.app.goo.gl/qhev2K3mbxbPA5qx8">Meolo</a>'
+    },
+    email: {
+        icon: '<i class="fa fa-envelope fact-icon"></i>',
+        value: '<a href="mailto:filippo.frater@gmail.com">filippo.frater@gmail.com</a>'
+    }
   },
   positions: [
     {
