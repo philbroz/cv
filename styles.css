@@ -61,6 +61,16 @@ h1, h2, h3, h4 {
     .text-print-right {
         text-align: right;
     }
+
+    .info-block {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #e0e0e0;
+    }
+    .period {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 }
 
 @media not print {
