@@ -46,6 +46,63 @@ I mainly worked on the backend using .NET Core, but also handled frontend develo
 Other technologies used: SQL Server, Azure SQL Server, MySQLite, Azure Dev
 For version control and branch workflow: Git with Azure DevOps, GitKraken (Git GUI), using release branch workflow with pull request policies`
     },
+    {
+      title: 'Software Developer',
+      company: 'Xerum Srl | XHolding Group',
+      location: 'Quarto d\'Altino, Venice Italy',
+      mode: 'In-person',  // or 'Remote', 'Hybrid'
+      period: 'february 2015 - april 2021 · 6 years and 3 months',
+      skills: ['.NET Framework up to 4.7', 'Mono', 'C programming language', 'SQLServer', 'RFID', 'barcode scanning', 'MVVM pattern', 'REST APIs', 'Xamarin for Cross-Platform development (Windows and Android)', 'MQTT'],
+      contents: `
+Development in the industrial sector at Pernix for project-specific software.
+\nDuring this period, in addition to development, I also took on the following responsibilities:
+\n\n
+\t - Technical and functional analysis, assisting the project manager
+\t - Technical support for sales (pre-sales)
+\t - Technical support for clients
+\t - Support for internal company processes
+
+Implementation and integration of SugarCRM for the company's sales force, administration, and order management.
+\nThe service was cloud-based, but we developed a platform in .NET to streamline business processes and synchronize data between various systems (ERP, WMS, CRM).
+\n\n
+Support for sales and clients in the following areas and technologies:
+\n\n
+\t - RFID
+\t - Industrial terminal hardware (Windows CE and Android)
+\t - EMM platform (SOTI MobiControl)
+\t - Zebra Voice Picking`
+    },
+    {
+      title: 'Software Developer | internship',
+      company: 'Pernix Srl | XHolding Group',
+      location: 'Quarto d\'Altino, Venice Italy',
+      mode: 'In-person',  // or 'Remote', 'Hybrid'
+      period: 'august 2014 - january 2015 · 6 months',
+      skills: ['.NET Framework', 'C programming language', 'SQLServer', 'RFID', 'barcode scanning', ],
+      contents: `
+Six-month internship where I supported the development team on client projects, developing applications for industrial terminals and RFID projects. I also assisted the person responsible for the internal infrastructure with IT help desk support for colleagues.
+
+I attended Zebra courses and obtained certifications related to barcode technologies, RFID, and print management.
+
+Technologies used:
+The development was primarily in C# (Windows Forms .NET 3.5, .NET 4.5), alternating with C for more specific needs on certain RFID hardware.
+SQL Server database.
+
+The main manufacturers and partners I collaborated with were: Zebra Technologies, CAEN RFID, SOTI, and Teklynx.`
+    },
+    {
+      title: 'Software Developer | internship',
+      company: 'Gascom S.p.A.',
+      location: 'Padua, Italy',
+      mode: 'In-person',  // or 'Remote', 'Hybrid'
+      period: 'february 2014 - june 2014 · 3 months',
+      skills: ['.NET Framework', 'SQLServer'],
+      contents: `
+My First Experience with C#\n
+Three-month internship where I developed Windows Forms applications and Windows services in C# (using Microsoft Visual Studio 2010 and SQL Server 2008 R2 database). These applications were for internal company use. During this period, I also studied and interfaced with PLCs as part of a new project.
+\n\n
+I worked in a team of four people with a team leader coordinating our efforts.`
+    },
   ],
   educations: [
     {
