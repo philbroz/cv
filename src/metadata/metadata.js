@@ -2,7 +2,7 @@ module.exports = {
   name: 'Filippo Frater',
   title: 'Software Engineer',
   facts: {
-    'Residence': '<a href="https://maps.app.goo.gl/G5r4RDBKUVEB5yHE9"><i class="fa fa-home fact-icon"></i>Meolo</a>',
+    '<i class="fa fa-home fact-icon"/>': '<a href="https://maps.app.goo.gl/qhev2K3mbxbPA5qx8">Meolo</a>',
     'Email': '<a href="mailto:filippo.frater@gmail.com"><i class="fa fa-envelope fact-icon"></i>filippo.frater@gmail.com</a>'
   },
   positions: [
