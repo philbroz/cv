@@ -1,5 +1,6 @@
 const handlebars = require('handlebars');
 const fs = require('fs-extra');
+const path = require('path');
 const markdownHelper = require('./utils/helpers/markdown');
 const templateData = require('./metadata/metadata');
 const getSlug = require('speakingurl');
@@ -30,6 +31,14 @@ const html = template({
 });
 
 fs.writeFileSync(outputDir + '/index.html', html);
+
+const sourcePath = path.join(__dirname, 'scripts.js');
+if (!fs.existsSync(sourcePath)) {
+  console.error(`Source file not found: ${sourcePath}`);
+} else {
+  const fileContent = fs.readFileSync(sourcePath, 'utf8');
+  fs.writeFileSync(outputDir + '/scripts.js', fileContent);
+}
 
 // Build PDF
 buildPdf(`${outputDir}/index.html`, `${outputDir}/${pdfFileName}`);

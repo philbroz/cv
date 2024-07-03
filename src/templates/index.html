@@ -15,6 +15,14 @@
 </head>
 <body>
 <div class="container page">
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="language-select" class="form-select">
+            <option value="en" selected>English</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
+
     <div class="border-bottom border-2 border-print-0 border-dark mb-5 pb-5 pb-print-0 mb-print-1">
         <div class="row">
             <div class="col-print-6 col-12 col-md-4 d-flex justify-content-between flex-column">
@@ -123,5 +131,6 @@
     </div>
     {{/each}}
 </div>
+<script src="scripts.js"></script>
 </body>
 </html>
