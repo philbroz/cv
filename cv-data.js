@@ -14,7 +14,7 @@ const CV = {
     description: "CV of Filippo Frater, Senior Software Developer specializing in .NET backend development.",
     lastUpdated: "April 2026",
     siteUrl:     "philbroz.github.io/cv",
-    pdfFile:     "filippo-frater-cv.pdf",   // set to "" to hide the button
+    pdfFile:     "",   // set to "" to hide the button
   },
 
   // ── IDENTITY ─────────────────────────────
