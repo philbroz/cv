@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title and description are set from cv-data.js -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main id="main"></main>
+</div>
+
+<script src="cv-data.js"></script>
+<script>
+const ICONS = {
+  mail:     `<svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`,
+  github:   `<svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>`,
+  linkedin: `<svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>`,
+  location: `<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+  download: `<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`,
+  sun:      `<svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`,
+  moon:     `<svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>`,
+  clock:    `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  map:      `<svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>`,
+  globe:    `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>`,
+  pin:      `<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+};
+
+const h = (tag, attrs = {}, ...children) => {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'className') el.className = v;
+    else if (k === 'html')  el.innerHTML = v;
+    else el.setAttribute(k, v);
+  }
+  children.flat().forEach(c => {
+    if (!c && c !== 0) return;
+    el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+  });
+  return el;
+};
+
+const icon = name => { const w = document.createElement('span'); w.innerHTML = ICONS[name] || ''; return w.firstElementChild; };
+
+const makeTags = list => {
+  const wrap = h('div', { className: 'tags' });
+  list.forEach(t => wrap.appendChild(h('span', { className: 'tag' }, t)));
+  return wrap;
+};
+
+function renderSidebar() {
+  const { identity, contact, nav, meta } = CV;
+  const sidebar = document.getElementById('sidebar');
+
+  const photoWrap = h('div', { className: 'photo-wrap' });
+  if (identity.photo) {
+    photoWrap.appendChild(h('img', { src: identity.photo, alt: `${identity.firstName} ${identity.lastName}` }));
+  } else {
+    photoWrap.appendChild(h('div', { className: 'initials' }, (identity.firstName[0] + identity.lastName[0]).toUpperCase()));
+  }
+
+  const nameBlock = h('div', {});
+  nameBlock.appendChild(photoWrap);
+  const nameEl = h('div', { className: 'sidebar-name' }, `${identity.firstName} ${identity.lastName}`);
+  nameEl.style.marginTop = '12px';
+  nameBlock.appendChild(nameEl);
+  nameBlock.appendChild(h('div', { className: 'sidebar-role' }, identity.role));
+
+  const navEl = h('nav', {});
+  const navList = h('ul', { className: 'sidebar-nav' });
+  nav.forEach(({ id, label }) => navList.appendChild(h('li', {}, h('a', { href: `#${id}` }, label))));
+  navEl.appendChild(navList);
+
+  const contactEl = h('div', { className: 'sidebar-contact' });
+  contact.forEach(({ icon: iconName, label, href }) => {
+    const el = href
+      ? h('a', { href, class: 'contact-item', ...(href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {}) }, label)
+      : h('span', { class: 'contact-item' }, label);
+    el.prepend(icon(iconName));
+    contactEl.appendChild(el);
+  });
+
+  if (meta.pdfFile) {
+    const pdf = h('a', { href: meta.pdfFile, download: '', className: 'btn-pdf' }, ' Download PDF');
+    pdf.prepend(icon('download'));
+    contactEl.appendChild(pdf);
+  }
+
+  const toggle = h('button', { className: 'theme-toggle', 'aria-label': 'Toggle dark mode' });
+  toggle.innerHTML = ICONS.sun + ICONS.moon;
+  toggle.appendChild(h('span', { className: 'icon-sun' }, 'Light'));
+  toggle.appendChild(h('span', { className: 'icon-moon' }, 'Dark'));
+  toggle.addEventListener('click', toggleTheme);
+  contactEl.appendChild(toggle);
+
+  sidebar.append(nameBlock, navEl, contactEl);
+}
+
+function renderHero() {
+  const { identity } = CV;
+  const hero = h('div', { className: 'hero' });
+  hero.appendChild(h('div', { className: 'hero-eyebrow' }, identity.eyebrow));
+  const name = h('h1', { className: 'hero-name' });
+  name.innerHTML = `${identity.firstName}<br><span>${identity.lastName}</span>`;
+  hero.appendChild(name);
+  hero.appendChild(h('p', { className: 'hero-bio' }, identity.bio));
+  const meta = h('div', { className: 'hero-meta' });
+  identity.stats.forEach((stat, i) => {
+    const item = h('span', { className: 'hero-meta-item' });
+    item.appendChild(icon(stat.icon));
+    item.appendChild(document.createTextNode(' ' + stat.text));
+    meta.appendChild(item);
+    if (i < identity.stats.length - 1) meta.appendChild(h('span', { className: 'hero-sep' }, '·'));
+  });
+  hero.appendChild(meta);
+  return hero;
+}
+
+function renderExperience() {
+  const section = h('section', { id: 'experience' });
+  section.appendChild(h('div', { className: 'section-label' }, 'Professional Experience'));
+  const timeline = h('div', { className: 'timeline' });
+
+  CV.experience.forEach(job => {
+    const entry = h('div', { className: 'entry' + (job.current ? ' entry-current' : '') });
+
+    const dateCol = h('div', { className: 'entry-date' });
+    dateCol.appendChild(h('div', { className: 'entry-year' }, job.yearMark));
+    const period = h('div', { className: 'entry-period' }, job.period);
+    dateCol.appendChild(period);
+
+    const body = h('div', { className: 'entry-body' });
+    body.appendChild(h('div', { className: 'entry-company' }, job.company));
+    body.appendChild(h('div', { className: 'entry-title' }, job.title));
+    const loc = h('div', { className: 'entry-location' });
+    loc.appendChild(icon('pin'));
+    loc.appendChild(document.createTextNode(' ' + job.location));
+    body.appendChild(loc);
+    body.appendChild(h('p', { className: 'entry-desc' }, job.desc));
+    body.appendChild(makeTags(job.tags));
+
+    entry.appendChild(dateCol);
+    entry.appendChild(body);
+    timeline.appendChild(entry);
+  });
+
+  section.appendChild(timeline);
+  return section;
+}
+
+function renderEducation() {
+  const section = h('section', { id: 'education' });
+  section.appendChild(h('div', { className: 'section-label' }, 'Education'));
+  CV.education.forEach(edu => {
+    const entry = h('div', { className: 'edu-entry' });
+    entry.appendChild(h('div', { className: 'edu-school' }, edu.school));
+    entry.appendChild(h('div', { className: 'edu-degree' }, edu.degree));
+    entry.appendChild(h('div', { className: 'edu-meta' }, edu.meta));
+    section.appendChild(entry);
+  });
+  return section;
+}
+
+function renderCertifications() {
+  const section = h('section', { id: 'certifications' });
+  section.appendChild(h('div', { className: 'section-label' }, 'Certifications & Courses'));
+  CV.certifications.forEach(cert => {
+    const item = h('div', { className: 'cert-item' });
+    const badge = h('div', { className: 'cert-badge' }, cert.badge);
+    const info = h('div', {});
+    info.appendChild(h('div', { className: 'cert-name' }, cert.name));
+    info.appendChild(h('div', { className: 'cert-issuer' }, cert.issuer));
+    item.appendChild(badge);
+    item.appendChild(info);
+    section.appendChild(item);
+  });
+  return section;
+}
+
+function renderExtra() {
+  const section = h('section', { id: 'extra' });
+  section.appendChild(h('div', { className: 'section-label' }, 'Beyond the Code'));
+  const grid = h('div', { className: 'extra-grid' });
+
+  CV.extra.cards.forEach(card => {
+    const el = h('div', { className: 'extra-card' + (card.full ? ' full' : '') });
+    el.appendChild(h('div', { className: 'extra-card-label' }, card.label));
+    el.appendChild(h('p', {}, card.text));
+    grid.appendChild(el);
+  });
+
+  const { interests } = CV.extra;
+  const interestsCard = h('div', { className: 'extra-card full' });
+  interestsCard.appendChild(h('div', { className: 'extra-card-label' }, interests.label));
+  interestsCard.appendChild(makeTags(interests.tags));
+  grid.appendChild(interestsCard);
+
+  section.appendChild(grid);
+  return section;
+}
+
+function renderFooter() {
+  const { meta } = CV;
+  const footer = h('div', { className: 'cv-footer' });
+  footer.appendChild(h('span', {}, `Last updated: ${meta.lastUpdated}`));
+  footer.appendChild(h('a', { href: `https://${meta.siteUrl}` }, meta.siteUrl));
+  return footer;
+}
+
+function render() {
+  document.title = CV.meta.title;
+  let desc = document.querySelector('meta[name="description"]');
+  if (!desc) { desc = document.createElement('meta'); desc.setAttribute('name','description'); document.head.appendChild(desc); }
+  desc.setAttribute('content', CV.meta.description);
+
+  renderSidebar();
+  const main = document.getElementById('main');
+  main.appendChild(renderHero());
+  main.appendChild(renderExperience());
+  main.appendChild(renderEducation());
+  main.appendChild(renderCertifications());
+  main.appendChild(renderExtra());
+  main.appendChild(renderFooter());
+  initNav();
+}
+
+// Dark mode
+const root = document.documentElement;
+const saved = localStorage.getItem('theme');
+if (saved) root.setAttribute('data-theme', saved);
+else if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.setAttribute('data-theme', 'dark');
+
+function toggleTheme() {
+  const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+
+// Active nav
+function initNav() {
+  const sections = document.querySelectorAll('section[id]');
+  const links    = document.querySelectorAll('.sidebar-nav a');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.sidebar-nav a[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    });
+  }, { threshold: 0.25, rootMargin: '-60px 0px -40% 0px' });
+  sections.forEach(s => obs.observe(s));
+}
+
+render();
+</script>
+</body>
+</html>
